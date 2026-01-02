@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# GeoSync Frontend (Common Operating Picture UI)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based frontend for **GeoSync**, a “Common Operating Picture (COP)” style web application built to support **pre-operational planning** workflows by organizing and presenting mission-relevant research data and documents in a single interface.
 
-## Available Scripts
+> **Capstone project (UCF)** — this repository contains the **frontend only**.  
+> **Security note:** This public repo contains **no sensitive data**. Use mock/sample data only.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## What this project does
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+GeoSync provides a structured UI for planning-oriented research workflows, including:
+- A centralized interface to view and organize planning artifacts (documents, notes, references, or mission-relevant data)
+- Navigation of planning workflows through stakeholder-driven screens and components
+- UI-level access controls using **authentication + role-based access concepts** (e.g., route guards / gated components), where applicable
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## My contribution (what I personally built)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I built and iterated on the GeoSync frontend with a focus on usability and secure-by-design UI patterns:
+- Implemented core page/component structure and primary user flows for the COP interface
+- Implemented authentication and **role-based access concepts** in the UI (route protection + conditional rendering)
+- Integrated frontend views with backend services/endpoints (when available) and refined flows based on feedback
+- Delivered iterative UX/UI improvements to increase clarity and usability for stakeholders
 
-### `npm run build`
+> If you’re reviewing this repo as a recruiter/hiring manager: this project is meant to demonstrate **frontend engineering**, product iteration, and secure UI patterns in a realistic capstone setting.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Tech stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **React** (Create React App)
+- **JavaScript / HTML / CSS**
+- **Node.js / npm** (local development)
 
-### `npm run eject`
+> If you used a UI library (Material UI / Chakra / Bootstrap), state management (Context/Redux), or data tooling (Axios/React Query), add it here.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting started (local development)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Prerequisites
+- **Node.js** (recommended: 16+)
+- **npm** (or yarn)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Install & run
+```bash
+git clone https://github.com/Price-Jack/geosync-front.git
+cd geosync-front
+npm install
+npm start
